@@ -31,7 +31,8 @@ public class MultiArrayDemo {
             j++;
         }
 
-        //Option #3 = 5/2
+        //Option #3 = 5/2 
+        // even though you are doing less iterations, you are still "touching" each index so complexity is still O(n)
         j=0;
         for (int i = 0; i < SIZE/2; i++) {
             multiArray[i][j] = 3;
